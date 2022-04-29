@@ -14,11 +14,11 @@ const { NotImplementedError } = require('../extensions/index.js');
  * ]) => 3`
  *
  */
-function countCats(backyard) {
+function countCats(matrix) {
   let count = 0;
-  for (let i=0; i<backyard.length; i++) {
-    for (let j=0; backyard[i].length; j++) {
-      if (backyard[i][j]==='^^') {
+  for (let i=0; i<matrix.length; i++) {
+    for (let j=0; matrix[i].length; j++) {
+      if (matrix[i][j] === "^^") {
         count++;
       }
     }
